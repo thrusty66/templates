@@ -13,6 +13,9 @@ type: Curtain Module
 standard: global
 ---
 Device uses [TYWE2S](https://tasmota.github.io/docs/Pinouts/#tywe2s) with the backside of the module with labelled pins exposed and easily accessible.
+Flashing is a bit tricky. RX and TX are not easily accessible.
+With an appropriate soldering tool you have to unsolder the green electrolytic capacitor to be able to solder wires to RX and TX.
+After flashing, solder the electrolytic capacitor back on. Attention: the electrolytic capacitor is polarized, it must be soldered as it was before on the board.
 
 ```haskell
 SetOption80 1
